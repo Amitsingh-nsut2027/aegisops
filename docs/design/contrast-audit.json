@@ -1,0 +1,156 @@
+{
+  "scope": "Design-token pairs only; rendered controls, charts, states and focus require implementation QA",
+  "colors": {
+    "canvas": "#111313",
+    "surface": "#191C1B",
+    "raised": "#222724",
+    "text": "#E6E7E3",
+    "secondary": "#A5AAA5",
+    "muted": "#8E958F",
+    "accent": "#D7F65B",
+    "control_border": "#748077",
+    "sev1": "#FFA8A8",
+    "sev1_bg": "#2A181A",
+    "sev2": "#FFCB82",
+    "sev2_bg": "#2B2216",
+    "sev3": "#E6DE9B",
+    "sev3_bg": "#282719",
+    "sev4": "#A9CCE5",
+    "sev4_bg": "#1B252D"
+  },
+  "checks": [
+    {
+      "foreground": "text",
+      "background": "canvas",
+      "ratio": 15.01,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "text",
+      "background": "surface",
+      "ratio": 13.82,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "text",
+      "background": "raised",
+      "ratio": 12.22,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "secondary",
+      "background": "canvas",
+      "ratio": 7.9,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "secondary",
+      "background": "surface",
+      "ratio": 7.27,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "secondary",
+      "background": "raised",
+      "ratio": 6.43,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "muted",
+      "background": "canvas",
+      "ratio": 6.08,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "muted",
+      "background": "surface",
+      "ratio": 5.6,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "muted",
+      "background": "raised",
+      "ratio": 4.95,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "accent",
+      "background": "canvas",
+      "ratio": 15.29,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "accent",
+      "background": "surface",
+      "ratio": 14.08,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "accent",
+      "background": "raised",
+      "ratio": 12.45,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "sev1",
+      "background": "sev1_bg",
+      "ratio": 9.18,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "sev2",
+      "background": "sev2_bg",
+      "ratio": 10.51,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "sev3",
+      "background": "sev3_bg",
+      "ratio": 10.96,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "sev4",
+      "background": "sev4_bg",
+      "ratio": 9.23,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "control_border",
+      "background": "canvas",
+      "ratio": 4.52,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "foreground": "control_border",
+      "background": "surface",
+      "ratio": 4.17,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "foreground": "control_border",
+      "background": "raised",
+      "ratio": 3.68,
+      "minimum": 3,
+      "passed": true
+    }
+  ]
+}

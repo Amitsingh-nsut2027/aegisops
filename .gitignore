@@ -1,0 +1,20 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+.venv/
+node_modules/
+.DS_Store
+.local/
+# Local credentials, output, and editor state
+.aws/
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
+.vscode/
+.idea/

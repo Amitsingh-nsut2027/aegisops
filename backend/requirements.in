@@ -1,0 +1,10 @@
+SQLAlchemy>=2.0,<2.1
+psycopg[binary]>=3.2,<4
+alembic>=1.13,<2
+boto3>=1.40,<2
+pydantic>=2.10,<3
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+# TestClient dependency; split test-only packages when introducing CI tooling.
+httpx>=0.27,<1
+PyJWT>=2.10,<3

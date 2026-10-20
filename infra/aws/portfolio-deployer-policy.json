@@ -1,0 +1,125 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PortfolioStack",
+      "Effect": "Allow",
+      "Action": [
+        "cloudformation:CreateStack",
+        "cloudformation:UpdateStack",
+        "cloudformation:DeleteStack",
+        "cloudformation:DescribeStacks",
+        "cloudformation:DescribeStackEvents",
+        "cloudformation:DescribeStackResources",
+        "cloudformation:GetTemplate"
+      ],
+      "Resource": "arn:aws:cloudformation:us-east-1:111122223333:stack/aegisops-portfolio/*"
+    },
+    {
+      "Sid": "TemplateValidation",
+      "Effect": "Allow",
+      "Action": "cloudformation:ValidateTemplate",
+      "Resource": "*"
+    },
+    {
+      "Sid": "PortfolioBucketOnly",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:DeleteBucket",
+        "s3:GetBucketLocation",
+        "s3:ListBucket",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy",
+        "s3:DeleteBucketPolicy",
+        "s3:GetBucketPublicAccessBlock",
+        "s3:PutBucketPublicAccessBlock",
+        "s3:GetEncryptionConfiguration",
+        "s3:PutEncryptionConfiguration",
+        "s3:GetBucketOwnershipControls",
+        "s3:PutBucketOwnershipControls",
+        "s3:GetBucketTagging",
+        "s3:PutBucketTagging",
+        "s3:GetBucketVersioning"
+      ],
+      "Resource": "arn:aws:s3:::aegisops-portfolio-111122223333-us-east-1"
+    },
+    {
+      "Sid": "PortfolioFilesOnly",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:DeleteObject"
+      ],
+      "Resource": "arn:aws:s3:::aegisops-portfolio-111122223333-us-east-1/*"
+    },
+    {
+      "Sid": "CreateTaggedPortfolioDistribution",
+      "Effect": "Allow",
+      "Action": [
+        "cloudfront:CreateDistribution"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:RequestTag/Project": "AegisOpsPortfolio"
+        }
+      }
+    },
+    {
+      "Sid": "TagNewPortfolioDistribution",
+      "Effect": "Allow",
+      "Action": "cloudfront:TagResource",
+      "Resource": "arn:aws:cloudfront::111122223333:distribution/*",
+      "Condition": {
+        "StringEquals": {
+          "aws:RequestTag/Project": "AegisOpsPortfolio"
+        }
+      }
+    },
+    {
+      "Sid": "ManageTaggedPortfolioDistribution",
+      "Effect": "Allow",
+      "Action": [
+        "cloudfront:GetDistribution",
+        "cloudfront:GetDistributionConfig",
+        "cloudfront:UpdateDistribution",
+        "cloudfront:DeleteDistribution",
+        "cloudfront:CreateInvalidation",
+        "cloudfront:GetInvalidation",
+        "cloudfront:ListTagsForResource",
+        "cloudfront:TagResource",
+        "cloudfront:UntagResource"
+      ],
+      "Resource": "arn:aws:cloudfront::111122223333:distribution/*",
+      "Condition": {
+        "StringEquals": {
+          "aws:ResourceTag/Project": "AegisOpsPortfolio"
+        }
+      }
+    },
+    {
+      "Sid": "OriginControlAndManagedPolicies",
+      "Effect": "Allow",
+      "Action": [
+        "cloudfront:CreateOriginAccessControl",
+        "cloudfront:GetOriginAccessControl",
+        "cloudfront:GetOriginAccessControlConfig",
+        "cloudfront:DeleteOriginAccessControl",
+        "cloudfront:GetCachePolicy",
+        "cloudfront:GetResponseHeadersPolicy"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadCreditAndBudgetStatus",
+      "Effect": "Allow",
+      "Action": [
+        "freetier:GetAccountPlanState",
+        "budgets:ViewBudget"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

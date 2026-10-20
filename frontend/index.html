@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="AegisOps local incident workbench. Read-only investigation evidence, trace, and attributed guidance.">
+  <title>AegisOps · Incident workbench</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#incident-table">Skip to incidents</a>
+  <div id="deployment-notice" class="deployment-notice" hidden><strong>PORTFOLIO DEMO</strong><span>Scripted CPU incidents · fake provider · no live AWS monitoring or model calls.</span></div>
+  <nav class="compact-navigation" aria-label="Screen navigation">
+    <a href="#incidents" data-screen="incidents">Incidents</a>
+    <a href="#investigations" data-screen="investigations">Investigations</a>
+  </nav>
+  <div id="app"></div>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+  <div id="toast" role="status" hidden></div>
+  <dialog id="palette" aria-labelledby="palette-title">
+    <div class="palette-heading"><h2 id="palette-title">Commands</h2><kbd>esc</kbd></div>
+    <label class="sr-only" for="command-search">Find a command</label>
+    <input id="command-search" placeholder="Find a command…" autocomplete="off">
+    <div id="command-list"></div>
+    <div class="palette-footer">↑ ↓ select <span>enter execute</span></div>
+  </dialog>
+</body>
+</html>

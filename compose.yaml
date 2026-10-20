@@ -1,0 +1,114 @@
+name: aegisops
+
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: aegis_local
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: aegisops
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "aegis_local", "-d", "aegisops"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  ingest:
+    image: aegisops-backend:local
+    build: ./backend
+    profiles: ["tools"]
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      DB_HOST: db
+    depends_on:
+      db:
+        condition: service_healthy
+
+  moto:
+    image: motoserver/moto@sha256:120b1589c6df7e35d2092935f6ff724486bb2c4189d0e36ce795baba1400ffd2
+    profiles: ["queue"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/moto-api/')"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  queue:
+    image: aegisops-backend:local
+    build: ./backend
+    profiles: ["queue"]
+    command: ["python", "queue_demo.py", "status"]
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      DB_HOST: db
+    depends_on:
+      db:
+        condition: service_healthy
+      moto:
+        condition: service_healthy
+
+  api_setup:
+    image: aegisops-backend:local
+    build: ./backend
+    profiles: ["api"]
+    command: ["sh", "-c", "alembic upgrade head && python setup_api_role.py"]
+    env_file: [.env.api, .env.investigator]
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      DB_HOST: db
+    depends_on:
+      db:
+        condition: service_healthy
+
+  analysis:
+    image: aegisops-backend:local
+    build: ./backend
+    profiles: ["api"]
+    command: ["python", "llm_demo.py"]
+    env_file: .env.api
+    environment:
+      DB_HOST: db
+      DB_USER: aegis_api
+    depends_on:
+      api_setup:
+        condition: service_completed_successfully
+
+  investigator:
+    image: aegisops-backend:local
+    build: ./backend
+    profiles: ["api"]
+    command: ["python", "investigator_cli.py"]
+    env_file: .env.investigator
+    environment:
+      DB_HOST: db
+      DB_USER: aegis_investigator
+    depends_on:
+      api_setup:
+        condition: service_completed_successfully
+
+  api:
+    image: aegisops-backend:local
+    build: ./backend
+    profiles: ["api"]
+    command: ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000", "--no-access-log"]
+    env_file: [.env.api, .env.auth]
+    environment:
+      DB_HOST: db
+      DB_USER: aegis_api
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      api_setup:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready')"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  postgres_data:

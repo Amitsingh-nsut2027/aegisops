@@ -1,0 +1,38 @@
+{
+  "checks": [
+    "Actual API records and locally bundled fonts loaded",
+    "Incident selection changes inspector and accurately shows no-run state",
+    "Tabs, keyboard tab navigation, recorded trace and source guidance work",
+    "Copy uses the full ID and timestamps reveal exact UTC time",
+    "Page-scoped filter, deliberate empty state and j/k row navigation work",
+    "Inspector resizes by pointer/keyboard, resets and persists preference",
+    "Cmd+K, command execution, Escape and focus restoration work",
+    "No viewer credential in browser storage",
+    "1280/1024/768/390 layouts and mobile list/detail/back navigation have no page overflow",
+    "Expired session, empty journal, API/history errors, loading and reduced-motion states verified",
+    "Provider fallback and unavailable guidance/evidence remain explicit in mocked saved-report states",
+    "No JavaScript runtime errors"
+  ],
+  "screenshots": [
+    "01-initial-1280.png",
+    "02-final-1280.png",
+    "03-runbooks-1280.png",
+    "04-empty-filter.png",
+    "05-command-palette.png",
+    "06-inbox-1024.png",
+    "06-inbox-390.png",
+    "06-inbox-768.png",
+    "07-detail-1024.png",
+    "07-detail-390.png",
+    "07-detail-768.png",
+    "08-session-expired.png",
+    "09-empty-journal.png",
+    "10-api-error.png",
+    "11-history-error.png",
+    "12-loading.png",
+    "13-stale-snapshot.png",
+    "14-provider-fallback.png",
+    "15-guidance-unavailable.png"
+  ],
+  "testedAt": "2026-10-18T23:23:58.935Z"
+}

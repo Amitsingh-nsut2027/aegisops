@@ -1,0 +1,695 @@
+{
+  "contrast": [
+    {
+      "text": "INC01",
+      "ratio": 5.88,
+      "pass": true
+    },
+    {
+      "text": "01",
+      "ratio": 5.88,
+      "pass": true
+    },
+    {
+      "text": "RUN02",
+      "ratio": 14.08,
+      "pass": true
+    },
+    {
+      "text": "02",
+      "ratio": 14.08,
+      "pass": true
+    },
+    {
+      "text": "DOC03",
+      "ratio": 5.88,
+      "pass": true
+    },
+    {
+      "text": "03",
+      "ratio": 5.88,
+      "pass": true
+    },
+    {
+      "text": "⌘K",
+      "ratio": 14.52,
+      "pass": true
+    },
+    {
+      "text": "v0.1",
+      "ratio": 5.88,
+      "pass": true
+    },
+    {
+      "text": "AEGISOPS",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "LOCAL / SIMULATION",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "Commands ⌘ K",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "⌘ K",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "Investigations.",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": ".",
+      "ratio": 15.29,
+      "pass": true
+    },
+    {
+      "text": "Run history · independent report snapshots",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "Refresh↻",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "↻",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "EVENT ID",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "All saved runs · exact match",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "Exact event ID · all runs if empty",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "Apply",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "Filter this page…",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "/",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "4 / 4 on this page",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "on this page",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "RUN / SOURCE EVENT",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "STARTED",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "WORKFLOW",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "RESULT",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "8aec198…525fapi-service · event cef497d…2048v3 · needs evide",
+      "ratio": 12.22,
+      "pass": true
+    },
+    {
+      "text": "api-service · event cef497d…2048",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "43m ago",
+      "ratio": 6.43,
+      "pass": true
+    },
+    {
+      "text": "22:44:17 UTC",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "v3",
+      "ratio": 12.22,
+      "pass": true
+    },
+    {
+      "text": "fake-v2",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "needs evidence",
+      "ratio": 12.22,
+      "pass": true
+    },
+    {
+      "text": "Primary output",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "↗",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "da441e2…a65dapi-service · event cef497d…2048v2 · needs evide",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "api-service · event cef497d…2048",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "45m ago",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "22:42:25 UTC",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "v2",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "fake-v2",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "needs evidence",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "Primary output",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "→",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "0e69176…abd1api-service · event cef497d…2048v2 · needs evide",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "api-service · event cef497d…2048",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "47m ago",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "22:40:37 UTC",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "v2",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "fake-v1",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "needs evidence",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "Primary output",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "→",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "408c1d6…1028api-service · event cef497d…2048v1 · needs evide",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "api-service · event cef497d…2048",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "52m ago",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "22:35:06 UTC",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "v1",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "fake-v1",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "needs evidence",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "Primary output",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "→",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "1–4 loaded",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "Page 1",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "SELECTED RUN / EXECUTION TIMING",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "8aec198…525f",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "SNAPSHOT",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "Last refreshed 0s ago",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "0s ago",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "RUN INSPECTOR",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "Copy ID",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Run 8aec198…525f",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "needs evidence",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Saved snapshot",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "43m ago",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Copy",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Evidence",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Trace",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Runbooks",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "TRIGGER",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "3 samples",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "SAMPLE 1",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "91%",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "SAMPLE 2",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "92%",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "SAMPLE 3",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "93%",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "> 90% · 3 consecutive samples",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "FINDING",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "Cause undetermined",
+      "ratio": 12.22,
+      "pass": true
+    },
+    {
+      "text": "insufficient evidence",
+      "ratio": 6.43,
+      "pass": true
+    },
+    {
+      "text": "Read saved summary",
+      "ratio": 6.43,
+      "pass": true
+    },
+    {
+      "text": "Simulated CPU exceeded 90% for 3 consecutive samples on simu",
+      "ratio": 6.43,
+      "pass": true
+    },
+    {
+      "text": "EVIDENCE INVENTORY",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "4",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "CPU samples",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Available",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "3 readings: [91.0, 92.0, 93.0]; threshold > 90%.",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Request rate",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Available",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Scripted request-rate comparison: baseline 120 requests/seco",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "290d ago",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "57e075f…1b13",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "Copy",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Deployment history",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Available",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Scripted deployment: demo-api-v2 released four minutes befor",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "290d ago",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "0b25a9f…93d7",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "Copy",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Application logs",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Available",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Scripted WARN entry: request queue length increased. This fi",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "290d ago",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "032e7f2…2c1c",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "Copy",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "No model call",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "Read only · simulation",
+      "ratio": 5.6,
+      "pass": true
+    }
+  ],
+  "fontFaces": [
+    {
+      "family": "Space Grotesk",
+      "status": "loaded"
+    },
+    {
+      "family": "IBM Plex Mono",
+      "status": "loaded"
+    },
+    {
+      "family": "IBM Plex Mono",
+      "status": "loaded"
+    }
+  ],
+  "bodyFont": "\"Space Grotesk\", sans-serif",
+  "dataFont": "\"IBM Plex Mono\", monospace",
+  "alignments": {
+    "toolbar": 80,
+    "heading": 80,
+    "observation": 80
+  },
+  "controls": [
+    {
+      "selector": ".refresh-button",
+      "hover": {
+        "color": "rgb(230, 231, 227)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "active": "rgba(34, 39, 36, 0.592)"
+    },
+    {
+      "selector": ".copy-button",
+      "hover": {
+        "color": "rgb(230, 231, 227)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "active": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "#history-tab-trace",
+      "hover": {
+        "color": "rgb(230, 231, 227)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "active": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": ".row-select",
+      "hover": {
+        "color": "rgb(230, 231, 227)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "active": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": ".command-trigger",
+      "hover": {
+        "color": "rgb(142, 149, 143)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "active": "rgba(34, 39, 36, 0.592)"
+    }
+  ],
+  "disabledPagination": true,
+  "traceTab": true,
+  "scope": "Screen-two polish. Token contrast does not by itself establish full WCAG conformance."
+}

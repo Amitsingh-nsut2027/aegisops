@@ -1,0 +1,676 @@
+{
+  "contrast": [
+    {
+      "text": "INC01",
+      "ratio": 14.08,
+      "pass": true
+    },
+    {
+      "text": "01",
+      "ratio": 14.08,
+      "pass": true
+    },
+    {
+      "text": "RUN02",
+      "ratio": 5.88,
+      "pass": true
+    },
+    {
+      "text": "02",
+      "ratio": 5.88,
+      "pass": true
+    },
+    {
+      "text": "DOC03",
+      "ratio": 5.88,
+      "pass": true
+    },
+    {
+      "text": "03",
+      "ratio": 5.88,
+      "pass": true
+    },
+    {
+      "text": "⌘K",
+      "ratio": 14.52,
+      "pass": true
+    },
+    {
+      "text": "v0.1",
+      "ratio": 5.88,
+      "pass": true
+    },
+    {
+      "text": "AEGISOPS",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "LOCAL / SIMULATION",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "Commands ⌘ K",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "⌘ K",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "Incidents.",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": ".",
+      "ratio": 15.29,
+      "pass": true
+    },
+    {
+      "text": "Saved CPU events · synthetic observation times",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "Refresh↻",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "↻",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "Filter this page…",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "/",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "4 / 4 on this page",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "on this page",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "SEV",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "RESOURCE / SCENARIO",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "OBSERVED",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "INVESTIGATION",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "—",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "api-servicequeue-demo-v1 · cef497d…2048",
+      "ratio": 12.22,
+      "pass": true
+    },
+    {
+      "text": "queue-demo-v1 · cef497d…2048",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "290d ago",
+      "ratio": 6.43,
+      "pass": true
+    },
+    {
+      "text": "00:08 UTC",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "Needs evidence",
+      "ratio": 12.22,
+      "pass": true
+    },
+    {
+      "text": "↗",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "—",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "api-servicequeue-demo-v1 · 9647d8a…9354",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "queue-demo-v1 · 9647d8a…9354",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "290d ago",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "00:02 UTC",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "No saved run",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "→",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "—",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "api-servicecpu-spike-demo-v1 · 63b7c10…3f20",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "cpu-spike-demo-v1 · 63b7c10…3f20",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "290d ago",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "00:08 UTC",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "No saved run",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "→",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "—",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "api-servicecpu-spike-demo-v1 · a123e9f…9a22",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "cpu-spike-demo-v1 · a123e9f…9a22",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "290d ago",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "00:02 UTC",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "No saved run",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "→",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "1–4 loaded",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "Page 1",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "SELECTED EVENT / OBSERVATION WINDOW",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "CPU trigger window",
+      "ratio": 15.01,
+      "pass": true
+    },
+    {
+      "text": "cef497d…2048 · cpu.high.v1",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "UTC · synthetic observation time · 80–100% axis",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "DETECTION RULE",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "> 90% CPU · 3 consecutive samples",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "SIM",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "Fixed sample data. No customer impact or live AWS health has",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "SNAPSHOT",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "Last refreshed 0s ago",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "text": "0s ago",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "text": "INCIDENT INSPECTOR",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "Copy ID",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "api-service",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Untriaged",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "warning source",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "simulated/ecs/api-service",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Copy",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "SAVED RUN",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "8aec198…525f · 25m agoda441e2…a65d · 26m ago0e69176…abd1 · 2",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "Evidence",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Trace",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Runbooks",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "TRIGGER",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "3 samples",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "SAMPLE 1",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "91%",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "SAMPLE 2",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "92%",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "SAMPLE 3",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "93%",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "> 90% · 3 consecutive samples",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "FINDING",
+      "ratio": 4.95,
+      "pass": true
+    },
+    {
+      "text": "Cause undetermined",
+      "ratio": 12.22,
+      "pass": true
+    },
+    {
+      "text": "insufficient evidence",
+      "ratio": 6.43,
+      "pass": true
+    },
+    {
+      "text": "Read saved summary",
+      "ratio": 6.43,
+      "pass": true
+    },
+    {
+      "text": "Simulated CPU exceeded 90% for 3 consecutive samples on simu",
+      "ratio": 6.43,
+      "pass": true
+    },
+    {
+      "text": "EVIDENCE INVENTORY",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "4",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "CPU samples",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Available",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "3 readings: [91.0, 92.0, 93.0]; threshold > 90%.",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Request rate",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Available",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Scripted request-rate comparison: baseline 120 requests/seco",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "290d ago",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "57e075f…1b13",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "Copy",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Deployment history",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Available",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Scripted deployment: demo-api-v2 released four minutes befor",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "290d ago",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "0b25a9f…93d7",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "Copy",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Application logs",
+      "ratio": 13.82,
+      "pass": true
+    },
+    {
+      "text": "Available",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "Scripted WARN entry: request queue length increased. This fi",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "290d ago",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "032e7f2…2c1c",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "Copy",
+      "ratio": 7.27,
+      "pass": true
+    },
+    {
+      "text": "fake-v2",
+      "ratio": 5.6,
+      "pass": true
+    },
+    {
+      "text": "No model call · read only",
+      "ratio": 5.6,
+      "pass": true
+    }
+  ],
+  "fontFaces": [
+    {
+      "family": "Space Grotesk",
+      "status": "loaded"
+    },
+    {
+      "family": "IBM Plex Mono",
+      "status": "loaded"
+    },
+    {
+      "family": "IBM Plex Mono",
+      "status": "loaded"
+    }
+  ],
+  "bodyFont": "\"Space Grotesk\", sans-serif",
+  "dataFont": "\"IBM Plex Mono\", monospace",
+  "alignments": {
+    "toolbar": 80,
+    "heading": 80,
+    "observation": 80
+  },
+  "controls": [
+    {
+      "selector": ".refresh-button",
+      "hover": {
+        "color": "rgb(230, 231, 227)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "active": "rgba(34, 39, 36, 0.74)"
+    },
+    {
+      "selector": ".copy-button",
+      "hover": {
+        "color": "rgb(230, 231, 227)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "active": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "#tab-trace",
+      "hover": {
+        "color": "rgb(230, 231, 227)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "active": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": ".row-select",
+      "hover": {
+        "color": "rgb(230, 231, 227)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "active": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": ".command-trigger",
+      "hover": {
+        "color": "rgb(142, 149, 143)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "active": "rgba(34, 39, 36, 0.592)"
+    }
+  ],
+  "disabledPagination": true,
+  "savedRunSelection": true,
+  "staleSnapshotRetained": true,
+  "scope": "Screen-one polish. Token contrast does not by itself establish full WCAG conformance."
+}

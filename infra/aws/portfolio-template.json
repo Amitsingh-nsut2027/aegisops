@@ -1,0 +1,185 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "AegisOps public scripted portfolio demo. Static files only. No IAM roles, compute, database, AI calls, or retail resources.",
+  "Resources": {
+    "PortfolioBucket": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": {
+          "Fn::Sub": "aegisops-portfolio-${AWS::AccountId}-${AWS::Region}"
+        },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "IgnorePublicAcls": true,
+          "BlockPublicPolicy": true,
+          "RestrictPublicBuckets": true
+        },
+        "OwnershipControls": {
+          "Rules": [
+            {
+              "ObjectOwnership": "BucketOwnerEnforced"
+            }
+          ]
+        },
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              }
+            }
+          ]
+        },
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "AegisOpsPortfolio"
+          }
+        ]
+      }
+    },
+    "PortfolioOriginAccess": {
+      "Type": "AWS::CloudFront::OriginAccessControl",
+      "Properties": {
+        "OriginAccessControlConfig": {
+          "Name": {
+            "Fn::Sub": "${AWS::StackName}-s3"
+          },
+          "Description": "Only the portfolio distribution may read this private S3 origin.",
+          "OriginAccessControlOriginType": "s3",
+          "SigningBehavior": "always",
+          "SigningProtocol": "sigv4"
+        }
+      }
+    },
+    "PortfolioDistribution": {
+      "Type": "AWS::CloudFront::Distribution",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "AegisOpsPortfolio"
+          }
+        ],
+        "DistributionConfig": {
+          "Enabled": true,
+          "Comment": "AegisOpsPortfolio public simulation demo",
+          "DefaultRootObject": "index.html",
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "PriceClass": "PriceClass_100",
+          "Origins": [
+            {
+              "Id": "PortfolioS3",
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "PortfolioBucket",
+                  "RegionalDomainName"
+                ]
+              },
+              "OriginAccessControlId": {
+                "Ref": "PortfolioOriginAccess"
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              }
+            }
+          ],
+          "DefaultCacheBehavior": {
+            "TargetOriginId": "PortfolioS3",
+            "ViewerProtocolPolicy": "redirect-to-https",
+            "AllowedMethods": [
+              "GET",
+              "HEAD"
+            ],
+            "CachedMethods": [
+              "GET",
+              "HEAD"
+            ],
+            "Compress": true,
+            "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+            "ResponseHeadersPolicyId": "67f7725c-6f97-4210-82d7-5512b31e9d03"
+          },
+          "ViewerCertificate": {
+            "CloudFrontDefaultCertificate": true
+          },
+          "Restrictions": {
+            "GeoRestriction": {
+              "RestrictionType": "none"
+            }
+          }
+        }
+      }
+    },
+    "PortfolioBucketPolicy": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "PortfolioBucket"
+        },
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Sid": "OnlyPortfolioCloudFront",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "cloudfront.amazonaws.com"
+              },
+              "Action": "s3:GetObject",
+              "Resource": {
+                "Fn::Sub": "${PortfolioBucket.Arn}/*"
+              },
+              "Condition": {
+                "StringEquals": {
+                  "AWS:SourceArn": {
+                    "Fn::Sub": "arn:${AWS::Partition}:cloudfront::${AWS::AccountId}:distribution/${PortfolioDistribution}"
+                  }
+                }
+              }
+            },
+            {
+              "Sid": "DenyInsecureTransport",
+              "Effect": "Deny",
+              "Principal": "*",
+              "Action": "s3:*",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "PortfolioBucket",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Sub": "${PortfolioBucket.Arn}/*"
+                }
+              ],
+              "Condition": {
+                "Bool": {
+                  "aws:SecureTransport": "false"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "BucketName": {
+      "Value": {
+        "Ref": "PortfolioBucket"
+      }
+    },
+    "DistributionId": {
+      "Value": {
+        "Ref": "PortfolioDistribution"
+      }
+    },
+    "DemoURL": {
+      "Value": {
+        "Fn::Sub": "https://${PortfolioDistribution.DomainName}"
+      }
+    }
+  }
+}

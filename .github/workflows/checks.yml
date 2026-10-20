@@ -1,0 +1,34 @@
+name: Checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build backend
+        run: docker build -t aegisops-backend:local backend
+      - name: Backend unit and contract tests
+        run: >-
+          docker run --rm --network none -v "$PWD:/workspace:ro" -w /workspace
+          -e PYTHONPATH=/workspace/backend aegisops-backend:local
+          python -B -m unittest discover -s tests
+      - name: Frontend tests and syntax
+        working-directory: frontend
+        run: |
+          npm test
+          npm run check
+      - name: Generate isolated portfolio artifact
+        run: >-
+          docker run --rm --network none --user "$(id -u):$(id -g)"
+          -v "$PWD:/workspace" -w /workspace aegisops-backend:local
+          python -B scripts/build_portfolio.py
+      - name: Verify artifact and offline deployment plan
+        run: python3 scripts/deploy_portfolio.py --account-id 111122223333

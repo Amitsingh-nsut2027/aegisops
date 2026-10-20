@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "History reads actual API runs with independent execution/observation timing",
+    "Older snapshots retain their own version and do not inherit current guidance",
+    "Run ID and source-event ID copy independently",
+    "Shared trace/guidance components and accessible tab navigation work in run context",
+    "Exact event-ID server filter validates before fetch; page-local filtering and successful-empty states are distinct",
+    "Rail and browser back navigation preserve the incident inbox filter and independent screen state",
+    "History j/k, context-aware palette and shared resizer work",
+    "Rapid selection ignores a late response from a previously selected run",
+    "1280/1024/768/390 layouts fit; narrow history/detail/back flow works",
+    "Session, empty, API, missing-run, missing-source and retained-stale-history states are explicit",
+    "Legacy missing metadata and matched loading skeletons have explicit states",
+    "Next/previous history pagination verified with isolated 26-run fixtures",
+    "No JavaScript runtime errors"
+  ],
+  "actualRuns": 4,
+  "testedAt": "2026-10-18T23:31:52.613Z"
+}
